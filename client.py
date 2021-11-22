@@ -1,7 +1,7 @@
 # Author: Justin Cruz
 # Date: 11/22/21
 # Description: Client file that utilizes two different means
-# of data transfer (Network sockets/PyZMQ) to send/recieve
+# of data transfer (Network sockets/PyZMQ) to send/receive
 # contents of an STL file.
 
 import socket
@@ -48,8 +48,8 @@ while True:
     s.sendall(bytes_read)
 
     # wait to recieve bytes back amd write to file
-    bytes_recieved = zmqSock.recv()
-    new_file.write(bytes_recieved)
+    bytes_received = zmqSock.recv()
+    new_file.write(bytes_received)
 
 # close files
 old_file.close()
