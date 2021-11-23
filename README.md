@@ -1,4 +1,19 @@
 # network_com_hw: Take-home programming project
+## Instructions
+To run this application, please ensure the following are installed on your machine:
+- Python
+- Pip
+- PyZMQ
+
+Next, clone the repository and navigate to the directory containing the repository's files on your local machine. Make sure to do this for two independent command line windows. 
+
+For the first command line window, you must run server.py with the following command:
+`python server.py`
+Then, for the second command line window, you will run client.py with the following command:
+`python client.py`
+
+After running these two commands in this order, the output file named "output.stl" should be in your directory. If you are on Windows, you can optionally run the command `fc cad_mesh.stl output.stl` to ensure correctness of the program.
+
 ## Objective
 Build two independent inter-communicating processes (A & B) able to exchange data using two different means of data transfer/messaging services. The processes could be headless - run from a command line, or have a GUI (You will provide instructions for using them).
 
